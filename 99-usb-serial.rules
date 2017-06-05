@@ -1,0 +1,8 @@
+#
+# Example USB assignment - Replace with Scanse Sweep Serial number
+# The modified file should be placed into /etc/udev/rules.d/
+# Allows the Sweep to be referred to as /dev/sweep
+#
+SUBSYSTEM=="tty", ATTRS(idVendor}=="0403", ATTRS{idProduct)=="6015", 
+ATTRS(serial)=="XXXXXXXX",
+SYMLINK+="sweep"
