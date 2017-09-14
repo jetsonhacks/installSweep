@@ -18,6 +18,7 @@ echo "Installing prerequisites"
 source devel/setup.bash
 cd src
 git clone https://github.com/scanse/sweep-ros.git
+git submodule add https://github.com/scanse/sweep-ros.git
 cd sweep-ros
 # Install the rosdeps -a = all -y = no questions -r = skip errors 
 rosdep install -a -y -r
